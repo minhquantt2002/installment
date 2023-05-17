@@ -148,11 +148,7 @@ public class LoginFrm extends JFrame {
     // End of variables declaration//GEN-END:variables
 
     public static void main(String[] args) throws SQLException {
-        String connectionUrl = "jdbc:sqlserver://localhost:1433;databaseName=important;user=sa;password=12345678";
-        try (Connection connection = DriverManager.getConnection(connectionUrl);) {
-            System.out.println(connection);
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+        LoginFrm loginFrm = new LoginFrm();
+        loginFrm.setVisible(true);
     }
 }
